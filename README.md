@@ -6,8 +6,8 @@ There is a twist to this heist.
 <details>
   <summary> What We'll Do Together (click to expand) </summary>
   ---
-  
-  1. TBA
+
+  Allow the guards to patrol the waypoints.
   
 </details>
 
@@ -15,7 +15,11 @@ There is a twist to this heist.
   <summary> ⚠️ SPOILERS: The Task (click to expand) </summary>
   ---
   
-  TBA
+  Same us last time, expand on the game with a twist of your own! You have 30 minutes, you can look up resources, and don't import new assets. Some examples:
+  - Guards speed up on the return trip
+  - Guards start moving randomly between waypoints on return trip
+  - Guard vision is not a circle but a cone
+  - Guards exhibit some different behavior based on level progress
 
 </details>
 
