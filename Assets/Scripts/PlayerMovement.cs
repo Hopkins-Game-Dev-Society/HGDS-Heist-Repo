@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 /*
  * Author: Shawn Guo
@@ -11,6 +12,12 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Settings")]
     [SerializeField] private float movementSpeed = 5;
+
+    [Header("Read Only - DO NOT CHANGE")] 
+    [SerializeField] private bool hasGottenTakeoutBox = false;
+
+    [Header("Object Refs")] 
+    [SerializeField] private GameObject statusTextObject;
 
     private Rigidbody2D rb;
 
@@ -37,6 +44,33 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow))
         {
             rb.MovePosition(rb.position + Vector2.right * movementSpeed * Time.fixedDeltaTime);
+        }
+    }
+
+    private void Update()
+    {
+        UpdateStatusText();
+    }
+
+    public void SetHasGottenTakeoutBox(bool hasGottenTakeoutBox)
+    {
+        this.hasGottenTakeoutBox = hasGottenTakeoutBox;
+    }
+
+    public bool GetHasGottenTakeoutBox()
+    {
+        return  this.hasGottenTakeoutBox;
+    }
+
+    void UpdateStatusText()
+    {
+        if (!hasGottenTakeoutBox)
+        {
+            statusTextObject.GetComponent<TMP_Text>().text = "Dang I want a takeout box :(";
+        }
+        else
+        {
+            statusTextObject.GetComponent<TMP_Text>().text = "I got my takeout box :D now I must escape";
         }
     }
 }
