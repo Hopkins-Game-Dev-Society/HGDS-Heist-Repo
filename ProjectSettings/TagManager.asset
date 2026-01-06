@@ -47,6 +47,12 @@ TagManager:
   - name: Background
     uniqueID: 4292186241
     locked: 0
+  - name: Waypoints
+    uniqueID: 2029548039
+    locked: 0
+  - name: Enemies
+    uniqueID: 500233271
+    locked: 0
   - name: Player
     uniqueID: 1770656573
     locked: 0

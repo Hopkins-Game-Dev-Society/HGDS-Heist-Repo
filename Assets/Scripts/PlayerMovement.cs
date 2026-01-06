@@ -13,6 +13,9 @@ public class PlayerMovement : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private float movementSpeed = 5;
 
+    [SerializeField] private string noTakeOutBoxMessage = "\"I really need a takeout box...\"";
+    [SerializeField] private string yesTakeOutBoxMessage = "\"I got the takeout box, now I need to escape...\"";
+
     [Header("Read Only - DO NOT CHANGE")] 
     [SerializeField] private bool hasGottenTakeoutBox = false;
 
@@ -66,11 +69,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!hasGottenTakeoutBox)
         {
-            statusTextObject.GetComponent<TMP_Text>().text = "Dang I want a takeout box :(";
+            statusTextObject.GetComponent<TMP_Text>().text = noTakeOutBoxMessage;
         }
         else
         {
-            statusTextObject.GetComponent<TMP_Text>().text = "I got my takeout box :D now I must escape";
+            statusTextObject.GetComponent<TMP_Text>().text = yesTakeOutBoxMessage;
         }
     }
 }
