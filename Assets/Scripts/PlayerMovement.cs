@@ -6,7 +6,7 @@ using TMPro;
 
 /*
  * Author: Shawn Guo
- * Last Updated: 1/6/2025
+ * Last Updated: 1/6/2026
  */
 public class PlayerMovement : MonoBehaviour
 {

@@ -3,6 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Author: Shawn Guo
+ * Updated: 1/6/2026
+ */
 public class FFCEntrance : MonoBehaviour
 {
     [Header("Refs")] 
