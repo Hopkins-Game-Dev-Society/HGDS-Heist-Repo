@@ -17,4 +17,5 @@ There is a twist to this heist.
   
   TBA
 
+</details>
 Starter project by [L1Ryx](https://github.com/l1ryx).
